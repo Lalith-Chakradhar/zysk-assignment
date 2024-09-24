@@ -1,0 +1,193 @@
+.heroContext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 3.5rem;
+}
+
+.heroImageSmall{
+    display: none;
+}
+
+.heroImageLarge{ 
+        max-width: 100%;
+        height: auto;
+        display: block;
+}
+
+.newFeatureContainer {
+    width: 100%; /* Make the container take the full width */
+    max-width: 500px; /* Limit the width on larger screens */
+    height: auto; /* Allow the height to adjust */
+    padding: 4px 10px; 
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread items out */
+    border: 1px solid #D6BBFB;
+    background-color: #F9F5FF;
+    color: #6941C6;
+    font-size: clamp(12px, 2.5vw, 14px); /* Responsive font size */
+    font-weight: 500;
+    line-height: 1.5rem;
+    cursor: pointer;
+    margin: 0 auto; /* Center the feature container */
+}
+
+.newFeature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: auto; /* Allow height to adjust */
+    padding: 1px 10px; 
+    border: 1px solid #D6BBFB;
+    border-radius: 1rem;
+    background-color: white;
+    color: #6941C6;
+}
+
+.newFeatureContainer span { 
+    flex-grow: 1; /* Allow the text to take remaining space */
+    white-space: nowrap; /* Prevent text from breaking */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Handle overflow with ellipsis */
+}
+
+.newFeatureContainer img { 
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.heroMainText h1 {
+    font-size: clamp(2rem, 6vw, 60px); /* Minimum of 2rem, scales with viewport width, max of 60px */
+    font-weight: 600;
+    line-height: clamp(2.5rem, 7vw, 72px); /* Line height scales with font size */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+
+  .heroSubText {
+    line-height: clamp(1.5rem, 5vw, 1.875rem); /* Responsive line height */
+    color: #475467;
+    width: 100%; /* For responsiveness, width should be a percentage */
+    max-width: 48rem; /* It will not exceed this width */
+    margin-bottom: 3.5rem;
+  }
+  
+  .heroSubText p {
+    font-size: clamp(1rem, 3.5vw, 1.25rem); /* Font size adjusts between 1rem and 1.25rem */
+    font-weight: 400;
+    text-align: center;
+  }
+
+.demoAndSignUpContainer {
+    display: flex;
+    width: 100%; /* Make the container responsive */
+    max-width: 17rem; /* Limit the max width on larger screens */
+    justify-content: space-between;
+}
+
+.demoAndSignUpContainer Button {
+    width: fit-content; /* Keep fit-content on larger screens */
+    height: 3.75rem;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    font-family: inherit;
+    text-transform: capitalize;
+}
+
+.demoAndSignUpContainer Button span {
+    display: flex;
+    align-items: center;
+}
+
+.demoAndSignUpContainer Button span img {
+    margin-right: 0.5rem;
+}
+
+
+.heroTestimonialsContainer {
+    height: auto; /* Change to auto to accommodate flexible height */
+    padding: 6rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroTestimonialsContainer p {
+    color: #475467;
+    margin-bottom: 2.5rem;
+}
+
+.heroTestimonialsLogos {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Make the width responsive */
+    max-width: 76rem; /* Keep max width for larger screens */
+}
+
+.heroTestimonialsLogos div {
+    flex: 1 1 14.1%;
+    display: flex;
+    justify-content: center; /* Center the logos */
+    margin-left:1rem;
+    margin-bottom: 1rem; /* Add some space below each logo */
+}
+
+
+/* Mobile view adjustments */
+@media (max-width: 480px) {
+    .heroSubText {
+        
+        margin-bottom: 2rem;
+      }
+
+    .demoAndSignUpContainer {
+      flex-direction: column-reverse; /* Stack the buttons vertically */
+      padding: 0rem;
+      width: 100%; /* Ensure container takes full width */
+      max-width: 100%; /* Remove max-width for mobile */
+      align-items: stretch; /* Make buttons take full width */
+    }
+  
+    .demoAndSignUpContainer Button {
+      width: 100%; /* Make buttons full width */
+    }
+
+    .heroImageLarge{ 
+        display: none;
+    }
+
+    .heroImageSmall{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .heroTestimonialsLogos {
+        justify-content: center; /* Center logos in mobile */
+    }
+
+    .heroTestimonialsLogos div {
+        margin-left:0rem;
+        flex: 1 1 50%; /* Adjust to 50% width to fit better */
+        max-width: 50%; /* Limit the width of each logo */
+    }
+
+    .heroTestimonialsContainer { 
+        padding: 3rem 0rem 4rem 0rem;
+    }
+}
+ 
+ 

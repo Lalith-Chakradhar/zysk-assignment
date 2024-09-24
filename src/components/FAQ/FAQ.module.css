@@ -1,0 +1,125 @@
+.mainContainer {
+    height: 69rem;
+    padding: 6rem 0rem;
+}
+
+.mainContainer h2{
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.75rem;
+    letter-spacing: -0.02em; 
+    margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.subHeading{
+    margin: auto;
+    width: 768px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; 
+    color: #475467;
+    margin-bottom: 3rem;
+}
+
+.accordionContainer {
+    border-bottom: 1px solid #EAECF0;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 48rem;
+  }
+  
+  .accordionContainer:last-child {
+    border-bottom: none;
+}
+
+  .accordionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  .accordionHeader h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordionOptions {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .accordionOptions p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #475467;
+    text-align: left; 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+
+  }
+  
+  .iconSection {
+    display: flex;
+    align-items: center;
+  }
+
+  .faqContainer{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+
+  .stillHaveQuestionsContainer{
+    width: 76rem;
+    height: 18.625rem;
+    margin: auto;
+    padding-top:2rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    background-color:#F9FAFB;
+    margin-top: 3rem;
+  }
+
+  .stillHaveQuestionsContainer Button{
+    width: fit-content;
+    height: 3rem;
+    padding: 12px 20px 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: inherit; 
+  }
+
+  
+
+  .stillHaveQuestionsText{  
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    margin-top: 1.3rem;
+    margin-bottom: 0.7rem;
+}
+
+.cantFindAnswers{
+  margin-top: 0.5rem;
+  color: #475467; 
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}

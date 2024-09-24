@@ -1,0 +1,56 @@
+.mainContainer{
+    height: 71rem;
+    padding: 6rem 0rem;
+}
+
+
+.mainContainer h2{
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.75rem;
+    letter-spacing: -0.02em; 
+    margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.featuresPill{
+    margin: auto;
+    width: 5.1875rem;
+    height: 1.75rem;
+    padding: 0.25rem 0.75rem; 
+    border-radius: 1rem;
+    border: 1px solid #E9D7FE;
+    color: #6941C6;
+    background-color:#F9F5FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuresPill p {
+    margin: 0rem;
+    color: #6941C6;
+    font-weight: '600';
+}
+
+.cardGrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0rem 2rem;
+    margin-top: 6.25rem;
+}
+
+.subHeading{
+    margin: auto;
+    width: 768px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; 
+    color: #475467;
+    margin-bottom: 3rem;
+}
+

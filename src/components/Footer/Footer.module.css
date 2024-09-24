@@ -1,0 +1,56 @@
+.mainContainer{ 
+    height: 27rem;
+    padding: 4rem 0rem 3rem 0rem;
+}
+
+.footerSection {
+    display: flex;
+}
+
+.footerSection ul{
+    list-style-type: none;
+}
+
+.footerNotesContainer{
+    margin: auto;
+    width: 76rem;
+    margin-bottom: 4rem;
+}
+
+.footerNoteCategory{ 
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: #667085;
+}
+
+.footerNoteContext{
+    margin:0rem;
+    margin-top: 0.5rem;
+    text-align: left; 
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px; 
+    color:#475467;
+}
+
+.logoContainer{
+    width: 8.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyrightContainer{
+    width: 76rem;
+    height: 4rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyrightContainer p{  
+    color: #667085;
+}
