@@ -145,18 +145,26 @@
     margin-bottom: 1rem; 
 }
 
+
  
 @media (max-width: 480px) {
+    
     .heroSubText {
         margin-bottom: 2rem;
+      }
+
+      .heroSubText p{
+        margin: 0rem 1rem;
       }
 
     .demoAndSignUpContainer {
       flex-direction: column-reverse; 
       gap: 0.7rem;
-      width: 100%; 
+      width: 90%; 
       max-width: 100%; 
-      align-items: stretch; 
+      align-items: stretch;
+      margin: auto;
+      
     }
   
     .demoAndSignUpContainer Button {
@@ -169,7 +177,7 @@
 
     .heroImageSmall{
         display: block;
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
         margin: auto;
     }
@@ -182,6 +190,10 @@
         margin-left:0rem;
         flex: 1 1 50%; 
         max-width: 50%; 
+    }
+
+    .heroTestimonialsLogos img {
+        width: 70%;
     }
 
     .heroTestimonialsContainer { 
