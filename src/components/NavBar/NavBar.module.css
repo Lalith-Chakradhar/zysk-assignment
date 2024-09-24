@@ -1,58 +1,58 @@
 .mainContainer {
     width: 100%;
-    height: 5rem; /* Fixed height */
+    height: 5rem; 
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #F2F4F7;
-    padding: 0 1rem; /* Add padding for smaller screens */
-    box-sizing: border-box; /* Include padding in width */
+    padding: 0 1rem; 
+    box-sizing: border-box; 
 }
 
 .mainContainerWrapper {
-    height: 100%; /* Use full height */
-    width: 90%; /* Make it responsive */
-    max-width: 80rem; /* Max width for larger screens */
+    height: 100%; 
+    width: 90%; 
+    max-width: 80rem; 
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Center items vertically */
+    align-items: center; 
 }
 
 .subContainer {
     display: flex;
-    width: 100%; /* Use full width */
+    width: 100%; 
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem; /* Add some padding */
+    padding: 0 1rem; 
 }
 
 .logoContainer {
-    flex: 0 1 auto; /* Flex for responsiveness */
+    flex: 0 1 auto; 
     display: flex;
     align-items: center;
     cursor: pointer;
-    max-width: 40%; /* Limit width for logo */
+    max-width: 40%; 
     gap: 0.4rem;
 }
 
 .navOptionsContainer {
     display: flex;
     align-items: center;
-    flex: 1; /* Allow this to grow */
+    flex: 1; 
 }
 
 .navOptionsContainer button {
     color: #475467;
-    font-size: 1rem; /* Base font size */
+    font-size: 1rem; 
     font-weight: 600;
     line-height: 1.5rem;
     outline: none;
     cursor: pointer;
     background-color: white;
     border: none;
-    padding: 0.5rem 1rem; /* Add padding for buttons */
-    margin: 0 0.5rem; /* Add margin for spacing */
-    transition: background-color 0.3s; /* Smooth hover effect */
+    padding: 0.5rem 1rem; 
+    margin: 0 0.5rem; 
+    transition: background-color 0.3s; 
 }
 
 
@@ -61,10 +61,10 @@
     align-items: center;
 }
 
-/* Use relative units for the span text size */
+ 
 .navOptionCustom span {
     color: #475467;
-    font-size: 1rem; /* Base font size */
+    font-size: 1rem; 
     font-weight: 600;
     line-height: 1.5rem;
     margin-right: 0.5rem;
@@ -74,15 +74,15 @@
     cursor: pointer;
 }
 
-/* Media Queries for Responsive Sizing */
-@media (max-width: 768px) /*Add burger box here*/
+ 
+@media (max-width: 768px) 
  {
     .mainContainer {
-        height: auto; /* Adjust height on smaller screens */
+        height: auto; 
     }
 
     .mainContainerWrapper {
-        width: 100%; /* Full width for the wrapper */
+        width: 100%; 
     }
 
     .subContainer { 
@@ -99,7 +99,7 @@
 
     
     .logoContainer {
-        flex: 0 1 auto; /* Flex for responsiveness */
+        flex: 0 1 auto; 
         display: flex;
         align-items: center;
         cursor: pointer;

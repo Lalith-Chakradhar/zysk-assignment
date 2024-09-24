@@ -18,22 +18,22 @@
 }
 
 .newFeatureContainer {
-    width: 100%; /* Make the container take the full width */
-    max-width: 500px; /* Limit the width on larger screens */
-    height: auto; /* Allow the height to adjust */
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
     padding: 4px 10px; 
     border-radius: 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Spread items out */
+    justify-content: space-between; 
     border: 1px solid #D6BBFB;
     background-color: #F9F5FF;
     color: #6941C6;
-    font-size: clamp(12px, 2.5vw, 14px); /* Responsive font size */
+    font-size: clamp(12px, 2.5vw, 14px); 
     font-weight: 500;
     line-height: 1.5rem;
     cursor: pointer;
-    margin: 0 auto; /* Center the feature container */
+    margin: 0 auto; 
 }
 
 .newFeature {
@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
-    height: auto; /* Allow height to adjust */
+    height: auto; 
     padding: 1px 10px; 
     border: 1px solid #D6BBFB;
     border-radius: 1rem;
@@ -50,10 +50,10 @@
 }
 
 .newFeatureContainer span { 
-    flex-grow: 1; /* Allow the text to take remaining space */
-    white-space: nowrap; /* Prevent text from breaking */
+    flex-grow: 1; 
+    white-space: nowrap; 
     overflow: hidden;
-    text-overflow: ellipsis; /* Handle overflow with ellipsis */
+    text-overflow: ellipsis; 
 }
 
 .newFeatureContainer img { 
@@ -63,37 +63,37 @@
 
 
 .heroMainText h1 {
-    font-size: clamp(2rem, 6vw, 60px); /* Minimum of 2rem, scales with viewport width, max of 60px */
+    font-size: clamp(2rem, 6vw, 60px);  
     font-weight: 600;
-    line-height: clamp(2.5rem, 7vw, 72px); /* Line height scales with font size */
+    line-height: clamp(2.5rem, 7vw, 72px); 
     margin-top: 1rem;
     margin-bottom: 0.5rem;
   }
   
 
   .heroSubText {
-    line-height: clamp(1.5rem, 5vw, 1.875rem); /* Responsive line height */
+    line-height: clamp(1.5rem, 5vw, 1.875rem); 
     color: #475467;
-    width: 100%; /* For responsiveness, width should be a percentage */
-    max-width: 48rem; /* It will not exceed this width */
+    width: 100%;  
+    max-width: 48rem; 
     margin-bottom: 3.5rem;
   }
   
   .heroSubText p {
-    font-size: clamp(1rem, 3.5vw, 1.25rem); /* Font size adjusts between 1rem and 1.25rem */
+    font-size: clamp(1rem, 3.5vw, 1.25rem); 
     font-weight: 400;
     text-align: center;
   }
 
 .demoAndSignUpContainer {
     display: flex;
-    width: 100%; /* Make the container responsive */
-    max-width: 17rem; /* Limit the max width on larger screens */
+    width: 100%; 
+    max-width: 17rem; 
     justify-content: space-between;
 }
 
 .demoAndSignUpContainer Button {
-    width: fit-content; /* Keep fit-content on larger screens */
+    width: fit-content;  
     height: 3.75rem;
     padding: 16px 24px;
     border-radius: 8px;
@@ -116,7 +116,7 @@
 
 
 .heroTestimonialsContainer {
-    height: auto; /* Change to auto to accommodate flexible height */
+    height: auto; 
     padding: 6rem 0rem;
     display: flex;
     flex-direction: column;
@@ -130,23 +130,22 @@
 
 .heroTestimonialsLogos {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Make the width responsive */
-    max-width: 76rem; /* Keep max width for larger screens */
+    width: 100%;  
+    max-width: 76rem;  
 }
 
 .heroTestimonialsLogos div {
     flex: 1 1 14.1%;
     display: flex;
-    justify-content: center; /* Center the logos */
+    justify-content: center; 
     margin-left:1rem;
-    margin-bottom: 1rem; /* Add some space below each logo */
+    margin-bottom: 1rem; 
 }
 
-
-/* Mobile view adjustments */
+ 
 @media (max-width: 480px) {
     .heroSubText {
         
@@ -154,16 +153,16 @@
       }
 
     .demoAndSignUpContainer {
-      flex-direction: column-reverse; /* Stack the buttons vertically */
+      flex-direction: column-reverse; 
       padding: 0.5rem;
       gap: 0.7rem;
-      width: 100%; /* Ensure container takes full width */
-      max-width: 100%; /* Remove max-width for mobile */
-      align-items: stretch; /* Make buttons take full width */
+      width: 100%; 
+      max-width: 100%; 
+      align-items: stretch; 
     }
   
     .demoAndSignUpContainer Button {
-      width: 100%; /* Make buttons full width */
+      width: 100%; 
     }
 
     .heroImageLarge{ 
@@ -178,13 +177,13 @@
     }
 
     .heroTestimonialsLogos {
-        justify-content: center; /* Center logos in mobile */
+        justify-content: center; 
     }
 
     .heroTestimonialsLogos div {
         margin-left:0rem;
-        flex: 1 1 50%; /* Adjust to 50% width to fit better */
-        max-width: 50%; /* Limit the width of each logo */
+        flex: 1 1 50%; 
+        max-width: 50%; 
     }
 
     .heroTestimonialsContainer { 
