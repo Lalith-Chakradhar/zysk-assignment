@@ -5,7 +5,7 @@ import topRightArrow from '../../assets/top right arrow.png';
 const ImageCard = ({data}) => {
   return (
     <div className={styles.cardContainer}>
-        <div><img src={data.image} alt="Blog Post Image"/></div>
+        <div><img src={data.image} alt="Blog Post Image" className={styles.cardImage} /></div>
         <div className={styles.cardContext}>
             <p className={styles.cardHeading}>{data.heading}</p>
             <div className={styles.titleContainer}>

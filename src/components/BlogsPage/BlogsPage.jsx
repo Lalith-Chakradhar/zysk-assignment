@@ -50,19 +50,22 @@ function BlogsPage() {
   return (
     <div className={styles.mainContainer}>
         <div className={styles.topTextContainer}>
-            <div style={{textAlign:'left'}}>
+            <div className={styles.topTextContainerLeft}>
                 <p className={styles.ourBlog}>Our blog</p>
                 <h2>Lastest blog posts</h2>
                 <p className={styles.subHeading}>Tool and strategies modern teams need to help their companies grow.</p>
             </div>
-            <div>
-            <Button variant="contained" style={{backgroundColor:'#7F56D9', border:'none',  textTransform: 'none'}} className={styles.viewAllButton}>View all posts</Button>
+            <div  className={styles.viewAllButton}>
+            <Button variant="contained" style={{backgroundColor:'#7F56D9', border:'none',  textTransform: 'none'}}>View all posts</Button>
             </div>
         </div>
         <div className={styles.cardGrid}>
           {blogPostData.map((dataItem, index) => (
                 <ImageCard key={index} data={dataItem} />
             ))}
+        </div>
+        <div className={styles.viewAllButtonMobile}>
+        <Button variant="contained" style={{backgroundColor:'#7F56D9', border:'none',  textTransform: 'none'}}>View all posts</Button>
         </div>
     </div>
   )

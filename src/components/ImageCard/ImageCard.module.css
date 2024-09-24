@@ -1,7 +1,16 @@
 .cardContainer{
-    width: 23.8rem;
-    height: 27.75rem;
+    width: clamp(20rem, 40vw, 22.3rem);
+    height: auto;
     text-align: left;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.cardImage{
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
 }
 
 .cardContext{
@@ -53,4 +62,11 @@
     font-weight: 400;
     line-height: 20px;
     color: #475467;
+}
+
+@media (max-width: 768px) {
+    .cardContainer{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import { Stack, Link } from '@mui/material';
+import { Link } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 import LogoIcon from '../../assets/logo-icon.png';
 
 const footerDetails = {
@@ -57,30 +58,27 @@ const footerDetails = {
 function Footer() {
   return (
     <div className={styles.mainContainer}>
-        <div className={styles.footerNotesContainer}>
-                <Stack
-                direction="row"
-                justifyContent="space-between"
-                spacing={4}
-                sx={{ padding: '20px' }}
-            >
-                {Object.keys(footerDetails).map((category) => (
-                <Stack key={category} spacing={1} sx={{ minWidth: '150px' }}>
-                    <p className={styles.footerNoteCategory}>{category === 'Usecases' ? 'Use cases' : category}</p>
-                    {footerDetails[category].map((link) => (
-                    <Link
-                        key={link}
-                        href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
-                        underline="none"
-                        color="inherit"
-                    >
-                        <p className={styles.footerNoteContext}>{link}</p>
-                    </Link>
+        <div>
+                <Grid container spacing={4} sx={{ padding: '20px'}} className={styles.footerNotesContainer}>
+                    {Object.keys(footerDetails).map((category) => (
+                        <Grid item xs={6} sm={4} md={2} key={category}>
+                            <div>
+                                <p className={styles.footerNoteCategory}>{category === 'Usecases' ? 'Use cases' : category}</p>
+                                {footerDetails[category].map((link) => (
+                                    <Link
+                                        key={link}
+                                        href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+                                        underline="none"
+                                        color="inherit"
+                                    >
+                                        <p className={styles.footerNoteContext}>{link}</p>
+                                    </Link>
+                                ))}
+                            </div>
+                        </Grid>
                     ))}
-                </Stack>
-                ))}
-            </Stack>
-        </div>
+                </Grid>
+            </div>
         <hr style={{ width: '88%', border: '1px solid #D0D5DD', marginBottom: '1.5rem' }}/>
         <div className={styles.copyrightContainer}>
             <div className={styles.logoContainer}>

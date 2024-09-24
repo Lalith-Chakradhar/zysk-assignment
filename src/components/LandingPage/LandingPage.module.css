@@ -148,13 +148,11 @@
  
 @media (max-width: 480px) {
     .heroSubText {
-        
         margin-bottom: 2rem;
       }
 
     .demoAndSignUpContainer {
       flex-direction: column-reverse; 
-      padding: 0.5rem;
       gap: 0.7rem;
       width: 100%; 
       max-width: 100%; 
