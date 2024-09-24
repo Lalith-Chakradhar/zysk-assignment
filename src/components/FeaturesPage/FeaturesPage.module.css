@@ -1,32 +1,60 @@
-.mainContainer{
-    height: 42rem;
-    padding: 6rem 0rem;
-    gap: 64px;
-}
-
-.cardGrid{
+.mainContainer {
+    padding: 6rem 1rem; /* Add responsive padding */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 0rem 2rem;
-    margin-top: 4.5rem;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; 
 }
 
-.mainContainer h2{
-    font-size: 36px;
+.cardGrid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items */
+    align-items: stretch; /* Allow cards to stretch equally */
+    gap: 2rem; /* Spacing between cards */
+    padding: 0 1rem; /* Responsive padding */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit max width for larger screens */
+}
+
+.featuresHeading { 
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight:600;
+}
+.mainContainer h2 {
+    font-size: clamp(2rem, 6vw, 2.25rem); /* Responsive font size */
     font-weight: 600;
-    line-height: 44px;
-    letter-spacing: -0.02em; 
+    line-height: clamp(2.5rem, 7vw, 2.75rem); /* Responsive line height */
+    text-align: center; /* Center text */
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem; /* Adjust margin */
 }
 
-.subHeading{
+.subHeading {
     margin: auto;
-    width: 768px;
-    height: 60px;
-    font-size: 20px;
+    width: 100%; /* Use full width on smaller screens */
+    max-width: 768px; /* Set max-width */
+    font-size: clamp(1rem, 3.5vw, 1.25rem); /* Responsive font size */
     font-weight: 400;
-    line-height: 30px; 
-    color: #475467;
+    line-height: clamp(1.5rem, 5vw, 1.875rem); /* Responsive line height */
+    color: #475467; /* Text color */
+    text-align: center; /* Center text for consistency */
+    margin-bottom: 4rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .mainContainer {
+        padding: 4rem 1rem; /* Adjust padding */
+    }
+
+    .mainContainer h2 {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    .subHeading {
+        font-size: 1rem; /* Smaller font size */
+        width: 90%; /* Adjust width */
+        margin-bottom: 2rem;
+    }
 }

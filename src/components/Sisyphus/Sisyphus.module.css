@@ -1,4 +1,4 @@
-.mainContainer{
+/* .mainContainer{
     height: 25rem;
     padding: 6rem 0rem;
     background-color: #F9FAFB;
@@ -19,4 +19,45 @@
     line-height: 1.75rem;
     margin-top: 0.8rem;
     margin-bottom: 0rem;
+} */
+
+.mainContainer { 
+    padding: 4rem 1rem; /* Responsive padding */
+    background-color: #F9FAFB;
+    display: flex; /* Use flex to center content */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 2rem; /* Space between items */
+}
+
+.mainContainer h2 {
+    width: 100%; /* Allow full width */
+    max-width: 71rem; /* Limit max width */
+    font-size: clamp(1.5rem, 6vw, 3rem); /* Responsive font size */
+    margin: auto;
+    font-weight: 500;
+    line-height: clamp(2rem, 7vw, 3.75rem); /* Responsive line height */
+    letter-spacing: -0.02em;
+    text-align: center; /* Center text */
+}
+
+.managerTitle {  
+    font-size: clamp(1rem, 3vw, 1.125rem); /* Responsive font size */
+    font-weight: 600;
+    line-height: 1.75rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0rem;
+}
+
+/* Responsive adjustments for Avatar and its container */
+.managerContainer {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center horizontally */
+    gap: 0.5rem; /* Space between items */
+}
+
+.managerContainer img {
+    width: 4rem; /* Adjust image size */
+    height: 4rem; /* Maintain aspect ratio */
 }
