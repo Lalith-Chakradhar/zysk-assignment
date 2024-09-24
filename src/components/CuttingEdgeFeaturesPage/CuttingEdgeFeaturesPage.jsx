@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './CuttingEdgeFeaturesPage.module.css';
 import CuttingEdgeImage from '../../assets/CuttingEdgeImage.png';
+import CuttingEdgeImageSmall from '../../assets/CuttingEdgeImage - mobile.png';
 import cardIcon1 from '../../assets/cardIcons/Featured icon - 1.png';
 import cardIcon2 from '../../assets/cardIcons/Featured icon - 2.png';
 import cardIcon3 from '../../assets/cardIcons/Featured icon - 3.png';
@@ -30,7 +31,10 @@ function CuttingEdgeFeaturesPage() {
         <div className={styles.featuresPill}><p style={{color:'#6941C6', fontWeight:'600'}}>Features</p></div>
         <h2>Cutting-edge features for advanced analytics</h2>
         <p className={styles.subHeading}>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
-        <div><img src={CuttingEdgeImage} alt="Phone & Desktop Image"/></div>
+        <div>
+          <img src={CuttingEdgeImage} alt="Phone & Desktop Image" className={styles.CuttingEdgeDevicesLarge}/>
+          <img src={CuttingEdgeImageSmall} alt="hero image" className={styles.CuttingEdgeDevicesSmall}/>
+        </div>
         <div className={styles.cardGrid}>
             {cardData.map((dataItem, index) => (
                 <TextCard key={index} data={dataItem} learnMore={true}/>

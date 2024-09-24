@@ -5,7 +5,7 @@ import arrowRightMini from '../../assets/arrow-right-mini.png';
 const TextCard = ({ data, learnMore = false }) => {
   return (
     learnMore ? (
-      <div className={styles.cardContainer}>
+      <div className={styles.cardContainerLearnMore}>
           <div><img src={data.icon} alt="feature-icon" /></div>
           <h3 className={styles.cardTitle}>{data.title}</h3>
           <p className={styles.cardSubText}>{data.subtext}</p>

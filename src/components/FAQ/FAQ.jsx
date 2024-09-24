@@ -81,7 +81,7 @@ function FAQ() {
             <div><img src={AvatarGroup} alt="team's avatar icons"/></div>
             <p className={styles.stillHaveQuestionsText}>Still have questions?</p>
             <p  className={styles.cantFindAnswers}>Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
-            <Button variant="contained" style={{backgroundColor:'#7F56D9', border:'none',  textTransform: 'none', marginTop: '1.5rem'}}>Get in touch</Button>
+            <Button variant="contained" style={{backgroundColor:'#7F56D9', textTransform: 'none'}} className={styles.getInTouchButton}>Get in touch</Button>
         </div>
     </div>
   )

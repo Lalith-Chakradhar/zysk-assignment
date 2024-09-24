@@ -10,7 +10,7 @@
 .mainContainer h2 {
     width: 100%;  
     max-width: 71rem; 
-    font-size: clamp(1.5rem, 6vw, 3rem); 
+    font-size: clamp(2rem, 6vw, 3rem); 
     margin: auto;
     font-weight: 500;
     line-height: clamp(2rem, 7vw, 3.75rem);  

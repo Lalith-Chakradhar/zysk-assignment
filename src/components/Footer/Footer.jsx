@@ -81,7 +81,7 @@ function Footer() {
                 ))}
             </Stack>
         </div>
-        <hr style={{ width: '80%', border: '1px solid #D0D5DD', marginBottom: '1.5rem' }}/>
+        <hr style={{ width: '88%', border: '1px solid #D0D5DD', marginBottom: '1.5rem' }}/>
         <div className={styles.copyrightContainer}>
             <div className={styles.logoContainer}>
                         <img src={LogoIcon} alt="logo-icon"/>

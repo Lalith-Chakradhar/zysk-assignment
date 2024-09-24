@@ -6,6 +6,14 @@
     justify-content: center;
 }
 
+.cardContainerLearnMore{
+    width: 23rem;
+    height: 15.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .cardContainer img{
     width: 3rem;
     height: 3rem;

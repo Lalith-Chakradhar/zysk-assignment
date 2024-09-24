@@ -1,41 +1,52 @@
-.mainContainer {
-    height: 69rem;
-    padding: 6rem 0rem;
+ .mainContainer {
+  padding: 6rem 1rem; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
 }
 
-.mainContainer h2{
-    font-size: 2.25rem;
-    font-weight: 600;
-    line-height: 2.75rem;
-    letter-spacing: -0.02em; 
-    margin-top: 1.3rem;
-    margin-bottom: 1.5rem;
+.mainContainer h2 {
+  font-size: clamp(2rem, 6vw, 2.25rem); 
+  font-weight: 600;
+  line-height: clamp(2.5rem, 7vw, 2.75rem); 
+  text-align: center; 
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem; 
 }
 
-
-.subHeading{
-    margin: auto;
-    width: 768px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px; 
-    color: #475467;
-    margin-bottom: 3rem;
+.subHeading {
+  margin: auto;
+  width: 100%; 
+  max-width: 768px; 
+  font-size: clamp(1rem, 3.5vw, 1.25rem); 
+  font-weight: 400;
+  line-height: clamp(1.5rem, 5vw, 1.875rem); 
+  color: #475467; 
+  text-align: center; 
+  margin-bottom: 3rem;
 }
 
-.accordionContainer {
+  .faqContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; 
+    width: 100%; 
+  }
+
+  .accordionContainer {
     border-bottom: 1px solid #EAECF0;
     padding: 15px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 48rem;
+    width: 100%; 
+    max-width: 48rem;
   }
   
   .accordionContainer:last-child {
     border-bottom: none;
-}
-
+  }
+  
   .accordionHeader {
     display: flex;
     justify-content: space-between;
@@ -44,9 +55,9 @@
   }
   
   .accordionHeader h1 {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
     font-weight: 500;
-    color: #333;
+    color: #101828;
     margin: 0;
   }
   
@@ -62,64 +73,77 @@
   }
   
   .accordionOptions p {
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 2.5vw, 1rem); 
     line-height: 1.5rem;
     color: #475467;
-    text-align: left; 
-    font-size: 16px;
+    text-align: left;
     font-weight: 400;
-    line-height: 24px; 
-
-  }
-  
-  .iconSection {
-    display: flex;
-    align-items: center;
   }
 
-  .faqContainer{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-  }
-
-  .stillHaveQuestionsContainer{
-    width: 76rem;
-    height: 18.625rem;
-    margin: auto;
-    padding-top:2rem;
-    gap: 2rem;
-    border-radius: 1rem;
-    background-color:#F9FAFB;
-    margin-top: 3rem;
-  }
-
-  .stillHaveQuestionsContainer Button{
-    width: fit-content;
-    height: 3rem;
-    padding: 12px 20px 12px 20px;
-    border-radius: 8px;
-    border: 1px solid #D0D5DD;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 24px;
-    font-family: inherit; 
-  }
-
-  
-
-  .stillHaveQuestionsText{  
-    font-size: 1.125rem;
-    font-weight: 600;
-    line-height: 1.75rem;
-    margin-top: 1.3rem;
-    margin-bottom: 0.7rem;
+.stillHaveQuestionsContainer {
+  width: 100%;
+  max-width: 76rem;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  background-color: #F9FAFB;
+  margin-top: 2.5rem;
+  text-align: center;
 }
 
-.cantFindAnswers{
+.stillHaveQuestionsContainer img {
+  max-width: 100%; 
+  height: auto;
+}
+
+.stillHaveQuestionsText {
+  font-size: clamp(1rem, 3vw, 1.125rem); 
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-top: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.cantFindAnswers {
   margin-top: 0.5rem;
-  color: #475467; 
-  font-size: 18px;
+  margin-bottom: 2rem;
+  color: #475467;
+  font-size: clamp(0.875rem, 2.5vw, 1.125rem); 
   font-weight: 400;
   line-height: 28px;
+}
+
+.getInTouchButton{
+  min-width: 134px;
+  height: clamp(40px, 10vw, 48px); 
+  padding: 12px 20px; 
+  gap: 8px;
+  border-radius: 8px; 
+  border: 1px solid transparent; 
+  opacity: 1;
+  color: white; 
+  font-size: clamp(0.875rem, 2vw, 1rem); 
+  text-align: center; 
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  cursor: pointer; 
+}
+
+
+@media (max-width: 768px) {
+ 
+  .mainContainer {
+      padding: 4rem 1rem; 
+  }
+
+  .mainContainer h2 {
+      font-size: 1.5rem; 
+  }
+
+  .subHeading {
+      font-size: 1rem; 
+      width: 90%; 
+      margin-bottom: 2rem;
+  }
 }

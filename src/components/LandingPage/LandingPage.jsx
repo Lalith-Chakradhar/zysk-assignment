@@ -54,7 +54,6 @@ function LandingPage() {
               <div><img src={SpheruleLogo} alt="Spherule logo"/></div>
               <div><img src={GlobalBankLogo} alt="GlobalBank logo"/></div>
               <div><img src={NietzscheLogo} alt="Nietzsche logo"/></div>
-              
             </div>
           </div>
         </div>
