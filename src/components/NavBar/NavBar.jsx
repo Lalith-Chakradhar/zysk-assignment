@@ -71,7 +71,7 @@ function NavBar() {
             <Drawer anchor="right" 
             open={drawerOpen} 
             onClose={toggleDrawer(false)}
-            sx={{ '& .MuiDrawer-paper': { width: '40vw' } }}>
+            sx={{ '& .MuiDrawer-paper': { width: '50vw' } }}>
               <div
                 role="presentation"
                 onKeyDown={toggleDrawer(false)}
