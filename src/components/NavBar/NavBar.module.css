@@ -77,6 +77,28 @@
     cursor: pointer;
 }
 
+.drawerProfileContainer{
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 1rem; 
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.drawerProfileImage {
+    width: clamp(2.5rem, 5vw, 3rem); 
+    height: auto;
+}
+
+.listItemNavOptions{
+    cursor: pointer;
+    color: #475467;
+    font-size: 1rem; 
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-right: 0.5rem;
+}
  
 @media (max-width: 768px) 
  {
@@ -108,7 +130,10 @@
         cursor: pointer;
         max-width: 100%;
     }
- 
+    
+    .burgerIcon { 
+        margin-left: auto;
+    }
 }
 
 

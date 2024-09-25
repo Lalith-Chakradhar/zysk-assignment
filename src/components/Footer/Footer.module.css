@@ -65,4 +65,8 @@
         align-items: flex-start;
         margin-left: 1.7rem;
     }
+
+    .footerNoteCategory {
+        width: 10vh;
+    }
 }
